@@ -13167,10 +13167,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;hdfc.xlsx&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;data/hdfc.xlsx&#39;</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="s1">&#39;Question&#39;</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
@@ -13182,7 +13182,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -13191,7 +13191,7 @@ div#notebook {
 <span class="n">qlabels</span> <span class="o">=</span> <span class="n">reduced</span><span class="p">[</span><span class="s1">&#39;Question&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
 <span class="n">alabels</span> <span class="o">=</span> <span class="n">reduced</span><span class="p">[</span><span class="s1">&#39;Answer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
 
-<span class="n">reduced</span>
+<span class="n">reduced</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13204,23 +13204,23 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13257,289 +13257,8 @@ div#notebook {
       <td>What is De-pledge?</td>
       <td>Removal of a pledge from the security to regai...</td>
     </tr>
-    <tr>
-      <th>5</th>
-      <td>Whom do I contact in case of ay further querie...</td>
-      <td>You can apply online on the clicking on the be...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>What is the minimum loan value/product value?</td>
-      <td>We are funding products with loan value above ...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>What are the tenures for which I can avail thi...</td>
-      <td>HDFC Bank Consumer Durable Loan is available i...</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Which all locations HDFC Bank Consumer Durable...</td>
-      <td>Mumbai,\nDelhi,\nBangalore,\nChennai,\nPune,\n...</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>How can I get my address changed in my loan ac...</td>
-      <td>In order to change your address in our records...</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Am I eligible for SmartDraft?</td>
-      <td>Yes you are eligible for SmartDraft, if your s...</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>When will my SmartDraft limit be renewed?</td>
-      <td>Based on your account performance and salary c...</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Which locations is SmartDraft available in?</td>
-      <td>SmartDraft is available in the following locat...</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>How do I utilize this amount?</td>
-      <td>This amount is made available in your Salary A...</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>What is the amount I can get as an overdraft?</td>
-      <td>Depending on your eligibility, the maximum amo...</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>What are the benefits of having a Current/Savi...</td>
-      <td>You get preferred Processing Fee, priority pro...</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>How much loan can I avail of for Professionals?</td>
-      <td>You can avail of a loan from Rs 50,000/- to Rs...</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>How do I repay my Professionals loan?</td>
-      <td>You pay the loan in equal monthly instalments ...</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>What security do I need to provide to obtain P...</td>
-      <td>To obtain the loan, there is absolutely no nee...</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>What are the loan tenure options for Professio...</td>
-      <td>You can repay your loan over a period of 12 to...</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Are my property documents safe with HDFC Ltd.?</td>
-      <td>HDFC offers in-house scrutiny of property docu...</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Can I give standing instructions to repay my H...</td>
-      <td>Yes, you can opt for Automated Repayment and y...</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Do I have the option to structure my loan as p...</td>
-      <td>Yes, you can structure your HDFC Ltd.  Home Lo...</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>How will HDFC decide my home loan eligibility?</td>
-      <td>HDFC assess the customer's repayment capacity ...</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>What is pre-EMI interest?</td>
-      <td>Pending final disbursement, you pay interest o...</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>What are the benefits of having a Current/Savi...</td>
-      <td>You get preferred Processing Fee, priority pro...</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>How much loan can I avail of Business Loan?</td>
-      <td>You can avail of a loan from Rs 50,000/- to Rs...</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>How do I repay my Business Loan?</td>
-      <td>You pay the loan in equal monthly instalments ...</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>What security do I need to provide to obtain a...</td>
-      <td>To obtain the loan, there is absolutely no nee...</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>What are the loan tenure options for Business ...</td>
-      <td>You can repay your loan over a period of 12 to...</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>963</th>
-      <td>Where and how do I get to be KYC Compliant? Do...</td>
-      <td>The Association of Mutual Funds of India (AMFI...</td>
-    </tr>
-    <tr>
-      <th>964</th>
-      <td>Are there any special requirements for an NRI ...</td>
-      <td>Yes. In addition to the certified true copy of...</td>
-    </tr>
-    <tr>
-      <th>965</th>
-      <td>Will I get an online confirmation of my transa...</td>
-      <td>An order once placed will be confirmed immedia...</td>
-    </tr>
-    <tr>
-      <th>966</th>
-      <td>Who can be the first applicant in the Investme...</td>
-      <td>The first applicant of the Mutual Fund Investm...</td>
-    </tr>
-    <tr>
-      <th>967</th>
-      <td>After the  First purchase, can I invest in the...</td>
-      <td>After your first purchase you will not be perm...</td>
-    </tr>
-    <tr>
-      <th>968</th>
-      <td>What if I have already obtained a MIN?</td>
-      <td>Scenario 1\nIf the MIN was obtained by submitt...</td>
-    </tr>
-    <tr>
-      <th>969</th>
-      <td>Who can open an Investment Services account?</td>
-      <td>Any Individual or HUF, who has an HDFC Bank Sa...</td>
-    </tr>
-    <tr>
-      <th>970</th>
-      <td>What are the advantages of investing in SIP?</td>
-      <td>A large part of the success of Mutual Funds is...</td>
-    </tr>
-    <tr>
-      <th>971</th>
-      <td>What happens if I have multiple folios/account...</td>
-      <td>You can inform the Mutual Fund to update the K...</td>
-    </tr>
-    <tr>
-      <th>972</th>
-      <td>What if I forget my customer ID/ IPIN number?</td>
-      <td>Your ID is available in your welcome letter or...</td>
-    </tr>
-    <tr>
-      <th>973</th>
-      <td>What are the schemes available to the customers?</td>
-      <td>Only select schemes of select AMC's are curren...</td>
-    </tr>
-    <tr>
-      <th>974</th>
-      <td>Do I need to inform about my change of Income ...</td>
-      <td>Yes. If you find an increased/decrease in your...</td>
-    </tr>
-    <tr>
-      <th>975</th>
-      <td>What are the KYC requirements for a Mutual Fun...</td>
-      <td>Individual investors will have to produce a Pr...</td>
-    </tr>
-    <tr>
-      <th>976</th>
-      <td>How do I convert my existing portfolio of Mutu...</td>
-      <td>Currently, this facility is not available.</td>
-    </tr>
-    <tr>
-      <th>977</th>
-      <td>Is there any special requirement for a PIO (Pe...</td>
-      <td>The requirements applicable to an NRI will als...</td>
-    </tr>
-    <tr>
-      <th>978</th>
-      <td>To whom is KYC applicable? Is there any exempt...</td>
-      <td>Currently, all investors (Individuals or Non-I...</td>
-    </tr>
-    <tr>
-      <th>979</th>
-      <td>Should I visit a PoS personally to obtain KYC ...</td>
-      <td>No. If you are not in a position to visit a Po...</td>
-    </tr>
-    <tr>
-      <th>980</th>
-      <td>What are the consequences of KYC cancellation/...</td>
-      <td>In the event of any KYC Application Form being...</td>
-    </tr>
-    <tr>
-      <th>981</th>
-      <td>I do not have an account with HDFC Bank, but w...</td>
-      <td>You can contact any HDFC bank Branch to open a...</td>
-    </tr>
-    <tr>
-      <th>982</th>
-      <td>Who do I inform about change of name/address/s...</td>
-      <td>You should intimate your change of name/addres...</td>
-    </tr>
-    <tr>
-      <th>983</th>
-      <td>Is a nomination facility available for lockers?</td>
-      <td>Yes, a nomination facility is available to Ind...</td>
-    </tr>
-    <tr>
-      <th>984</th>
-      <td>What are the timings for locker operations?</td>
-      <td>You can plan your visit and access your locker...</td>
-    </tr>
-    <tr>
-      <th>985</th>
-      <td>How many nominees can be added to a single loc...</td>
-      <td>A nomination can be made in favour of only one...</td>
-    </tr>
-    <tr>
-      <th>986</th>
-      <td>Can I pay for the rent of a locker through my ...</td>
-      <td>Yes, you can set a Standing Instruction in you...</td>
-    </tr>
-    <tr>
-      <th>987</th>
-      <td>What is the procedure to add / cancel / modify...</td>
-      <td>You will need to fill up the following forms a...</td>
-    </tr>
-    <tr>
-      <th>988</th>
-      <td>What if I forget my ATM PIN?</td>
-      <td>You can call the HDFC bank\nPhoneBanking\nto r...</td>
-    </tr>
-    <tr>
-      <th>989</th>
-      <td>How can I check the balance on my HDFC Bank Fo...</td>
-      <td>You can check the balance on ForexPlus card wi...</td>
-    </tr>
-    <tr>
-      <th>990</th>
-      <td>Who can purchase ForexPlus Card?</td>
-      <td>ForexPlus card can only be used for making pay...</td>
-    </tr>
-    <tr>
-      <th>991</th>
-      <td>Can I load ForexPlus card by making payment in...</td>
-      <td>No, ForexPlus card cannot be loaded against pa...</td>
-    </tr>
-    <tr>
-      <th>992</th>
-      <td>Who should I contact for my replacement Card? ...</td>
-      <td>You can contact HDFC Bank PhoneBanking number ...</td>
-    </tr>
   </tbody>
 </table>
-<p>993 rows × 2 columns</p>
 </div>
 </div>
 
@@ -13563,7 +13282,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plus</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;hdfc&#39;</span><span class="p">}</span>
@@ -13593,7 +13312,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">tf_vect</span> <span class="o">=</span><span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="n">stop</span><span class="p">,</span>
@@ -13632,7 +13351,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Transforming context with tfidf</span>
@@ -13648,7 +13367,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Displaying TF_IDF results</span>
@@ -13690,7 +13409,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">answers</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">ret_indices</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
@@ -13717,7 +13436,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">predict</span><span class="p">(</span><span class="s1">&#39;How do I pay my personal loan ?&#39;</span><span class="p">)</span>
@@ -13733,23 +13452,23 @@ Vocabulary size :  1140
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13809,7 +13528,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Generating tokens after converting to lowercase, removing stopwords and non-alphanumberic tokens</span>
@@ -13829,7 +13548,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Eliminating questions which have a jaccard_distance &gt; 0.9 with another questions</span>
@@ -13873,7 +13592,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">pred_jaccard</span><span class="p">(</span><span class="s1">&#39;How does amortization work ?&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -13890,23 +13609,23 @@ Vocabulary size :  1140
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13962,7 +13681,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">predict</span><span class="p">(</span><span class="s1">&#39;How does amortization work ?&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -13979,23 +13698,23 @@ Vocabulary size :  1140
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -14045,7 +13764,7 @@ Vocabulary size :  1140
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Frequency Distribution of words</span>
@@ -14053,8 +13772,9 @@ Vocabulary size :  1140
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">tokens</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
     <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="n">all_</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="n">all_</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
-<span class="k">print</span> <span class="s2">&quot;Word Frequency&quot;</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">get_tokens</span><span class="p">(</span><span class="s1">&#39;How does amortization work ?&#39;</span><span class="p">):</span>
+<span class="n">SENT</span> <span class="o">=</span> <span class="s1">&#39;How does amortization work ?&#39;</span>
+<span class="k">print</span> <span class="s2">&quot;Word/Token Frequency of : &quot;</span><span class="p">,</span><span class="n">SENT</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">get_tokens</span><span class="p">(</span><span class="n">SENT</span><span class="p">):</span>
     <span class="k">print</span> <span class="n">i</span><span class="p">,</span><span class="s2">&quot;:&quot;</span><span class="p">,</span><span class="n">all_</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 
@@ -14072,7 +13792,7 @@ Vocabulary size :  1140
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Word Frequency
+<pre>Word/Token Frequency of :  How does amortization work ?
 how : 236
 work : 13
 amortization : 1
