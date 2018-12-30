@@ -1,4 +1,4 @@
-# Notebooks on some NLP tasks
+# Notebooks on NLP tasks
 
 ## Building bots by matching Queries with FAQs
 I've explored the following methods to find closest questions:
